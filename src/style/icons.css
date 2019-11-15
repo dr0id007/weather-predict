@@ -1,0 +1,19 @@
+.f-custom-r {
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+    color: white;
+    text-align: end;
+    font-size: 20px;
+    background: #2c2924;
+}
+
+.f-custom-l {
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+    color: white;
+    text-align: end;
+    font-size: 20px;
+    background: #2c2924;
+}
