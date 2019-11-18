@@ -1,0 +1,13 @@
+.chart {
+    height: 1000px;
+    width: 1000px;
+}
+
+.result {
+    height: 100vh;
+    background: url('../assets/input-back1.png');
+}
+
+.input {
+    height: 100vh;
+}

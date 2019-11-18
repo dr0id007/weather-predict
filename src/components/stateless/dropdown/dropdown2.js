@@ -29,7 +29,11 @@ export default class input extends Component {
       "2012",
       "2013",
       "2014",
-      "2015"
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019"
     ];
 
     const func = () => {
@@ -52,21 +56,22 @@ export default class input extends Component {
     };
 
     return (
-      <div className="">
-        <div className="dropdown drop-custom">
-          <button
-            className="btn dropdown-toggle pt-2 pl-4 pr-4 pb-2 btn-custom"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+      <div className="dropdown">
+        <button
+          className="btn dropdown-toggle btn-custom drop-input"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <span>
+            <i class="fa fa-calendar pr-2" aria-hidden="true"></i>
             {this.props.year}
-          </button>
-          <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            {func()}
-          </div>
+          </span>
+        </button>
+        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          {func()}
         </div>
       </div>
     );

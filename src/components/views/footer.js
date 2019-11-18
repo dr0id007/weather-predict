@@ -4,39 +4,40 @@ import { NavLink } from "react-router-dom";
 export default class footer extends Component {
   render() {
     return (
-      <footer className="page-footer font-small blue">
+      <footer className="page-footer footer font-small blue">
         <footer className="pt-5 pb-4" id="contact">
           <div className="container">
             <div className="row">
               <div className="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
                 <h5 className="mb-4 font-weight-bold">ABOUT US</h5>
-                <p className="mb-4">Etiam laoreet in ex quis efficitur.</p>
+                <p className="mb-4">Team Members</p>
                 <ul className="f-address">
                   <li>
                     <div className="row">
                       <div className="col-1">
-                        <i className="fas fa-map-marker"></i>
-                      </div>
-                      <div className="col-10">
-                        <h6 className="font-weight-bold mb-0">Address:</h6>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="row">
-                      <div className="col-1">
-                        <i className="far fa-envelope"></i>
+                        {/* <i className="fas fa-map-marker"></i> */}
                       </div>
                       <div className="col-10">
                         <h6 className="font-weight-bold mb-0">
-                          Have any questions?
+                          Team leader :-
                         </h6>
+                        <p>Roshan Mishra</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="row">
+                      <div className="col-1">
+                        {/* <i className="far fa-envelope"></i> */}
+                      </div>
+                      <div className="col-10">
+                        <h6 className="font-weight-bold mb-0">Members :-</h6>
                         <p>
-                          <a href="/a">Support@userthemes.com</a>
+                          <a href="/a">Dev Arora</a>
+                          <br />
+                          <a href="/a">Rahul Goyal</a> <br />
+                          <a href="/a">Robin Singh</a>
+                          <br />
                         </p>
                       </div>
                     </div>
@@ -44,12 +45,15 @@ export default class footer extends Component {
                   <li>
                     <div className="row">
                       <div className="col-1">
-                        <i className="fas fa-phone-volume"></i>
+                        {/* <i className="fas fa-phone-volume"></i> */}
                       </div>
                       <div className="col-10">
-                        <h6 className="font-weight-bold mb-0">Address:</h6>
+                        <h6 className="font-weight-bold mb-0">Institute :-</h6>
                         <p>
-                          <a href="/a">+XX (0) XX XX-XXXX-XXXX</a>
+                          <a href="/a">
+                            Dr. Akhilesh Das Gupta Institute of Technology and
+                            Management
+                          </a>
                         </p>
                       </div>
                     </div>
@@ -170,18 +174,18 @@ export default class footer extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-12 ">
-                <div className="text-center text-white">
-                  &copy; 2018 Your Company. All Rights Reserved.
+                <div className="pb-5 text-center text-white">
+                  &copy; HACK-N-CODY Team Name :- Send_Nodes
                 </div>
               </div>
             </div>
           </div>
         </section>
-
+        {/* 
         <div className="footer-copyright text-center py-3">
           © 2019 Copyright:
           <NavLink to="/"> domain_url.com</NavLink>
-        </div>
+        </div> */}
       </footer>
     );
   }

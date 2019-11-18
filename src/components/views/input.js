@@ -10,8 +10,8 @@ export default class input extends Component {
     this.state = {
       result: false,
       data: {},
-      state: "select option",
-      year: "select option"
+      state: "What are you looking for?",
+      year: "year"
     };
   }
   onSubmit = async e => {
@@ -40,36 +40,38 @@ export default class input extends Component {
     if (this.state.result === true) {
       return (
         <div>
-          <Result props={this.state.data} />
+          <Result props={this.state} />
         </div>
       );
     } else {
       return (
         <div className="input">
-          <div className="container">
+          <div className="container-fluid">
             <div className="row">
-              <div className="col-6">
-                <h3 className="mt-2">Select State:-</h3>
+              <div className="col-12 m-5">
+                <h1 className="text-center">PREDICT YOUR FLOOD</h1>
               </div>
-              <div className="col-6">
+              <div className="col-12 m-5 line">
                 <Dropdown
                   state={this.state.state}
                   onSelect={this.onSelectState}
                 />
+                {/* <div className="hr-custom"></div> */}
+                <Dropdown2
+                  year={this.state.year}
+                  onSelect={this.onSelectYear}
+                />
+
+                {/* <div className="bottom"> */}
+                <button
+                  onClick={this.onSubmit}
+                  className="btn btn-custom btn-white"
+                  to={"/"}
+                >
+                  Next
+                </button>
+                {/* </div> */}
               </div>
-              <div className="col-6">
-                <h3 className="mt-2">Select year:-</h3>
-              </div>
-              <Dropdown2 year={this.state.year} onSelect={this.onSelectYear} />
-            </div>
-            <div className="bottom mt-5">
-              <button
-                onClick={this.onSubmit}
-                className="btn btn-custom"
-                to={"/"}
-              >
-                Next
-              </button>
             </div>
           </div>
         </div>

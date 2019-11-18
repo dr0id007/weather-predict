@@ -1,0 +1,11 @@
+.hr-custom {
+    height: 50px;
+    color: #e78c9a;
+    border-top: 5px solid grey;
+    width: 100px;
+    margin: auto;
+}
+
+.not-blur {
+    filter: none;
+}

@@ -14,7 +14,7 @@ export default class App extends Component {
     return (
       <div>
         <BrowserRouter>
-          <Navbar />
+          {/* <Navbar /> */}
           <Switch>
             <Route path={"/input"} component={Input} />
             <Route path={"/about"} component={About} />

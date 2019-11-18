@@ -32,7 +32,7 @@ export default class input extends Component {
     // ];
 
     const data = [
-      "BIHAR.csv",
+      "BIHAR",
       "COASTAL ANDHRA PRADESH",
       "COASTAL KARNATAKA",
       "GANGETIC WEST BENGAL",
@@ -65,21 +65,22 @@ export default class input extends Component {
     };
 
     return (
-      <div className="">
-        <div className="dropdown">
-          <button
-            className="btn dropdown-toggle pt-2 pl-4 pr-4 pb-2 btn-custom  drop-custom"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+      <div className="dropdown">
+        <button
+          className="btn dropdown-toggle btn-custom  drop-input"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <span className="d-inline">
+            <i class="fa fa-map-marker pr-2" aria-hidden="true"></i>
             {this.props.state}
-          </button>
-          <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            {som()}
-          </div>
+          </span>
+        </button>
+        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          {som()}
         </div>
       </div>
     );
